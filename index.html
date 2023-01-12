@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Twitter clone</title>
+  </head>
+
+  <body class="bg-gray-900">
+    <!--Container-->
+    <div class="container mx-auto h-screen flex xl:max-w-[1200px] p-1">
+      <!-- Left -->
+      <div class="xl:w-1/5 w-20 h-full flex flex-col cl:pr-4">
+        <!-- Logo -->
+        <a href="" class="link-active my-2"
+          ><i class="fa-brands fa-twitter text-4xl"></i
+        ></a>
+        <nav class="mt-5">
+          <a href="" class="link-active mb-8"
+            ><i class="fa-solid fa-house text-xl"></i>
+            <span class="icon">Home</span>
+          </a>
+          <a href="" class="link mb-8"
+            ><i class="fa-solid fa-hashtag text-xl"></i>
+            <span class="icon">Explore</span>
+          </a>
+          <a href="" class="link mb-8"
+            ><i class="fa-solid fa-bell text-xl"></i>
+            <span class="icon">Notification</span>
+          </a>
+          <a href="" class="link mb-8"
+            ><i class="fa-solid fa-envelope text-xl"></i>
+            <span class="icon">Message</span>
+          </a>
+          <a href="" class="link mb-8"
+            ><i class="fa-solid fa-bookmark text-xl"></i>
+            <span class="icon">Bookmark</span>
+          </a>
+          <a href="" class="link mb-8"
+            ><i class="fa-solid fa-list-ul text-xl"></i>
+            <span class="icon">List</span>
+          </a>
+          <a href="" class="link mb-8"
+            ><i class="fa-solid fa-user text-xl"></i>
+            <span class="icon">Profile</span>
+          </a>
+          <a href="" class="link mb-8"
+            ><i class="fa-solid fa-ellipsis text-xl"></i>
+            <span class="icon">More</span>
+          </a>
+        </nav>
+
+        <!-- Button -->
+        <a
+          href=""
+          class="mx-auto w-11 h-11 xl:w-full flex items-center justify-center bg-blue-400 rounded-full text-white font-bold"
+          ><i class="fa-solid fa-feather text-xl block xl:hidden"></i>
+          <span class="icon">Tweet</span></a
+        >
+        <!-- User -->
+        <div
+          class="w-14 xl:w-full mx-auto mt-auto flex justify-between mb-2 rounded-full p-2 cursor-pointer"
+        >
+          <img
+            src="https://as1.ftcdn.net/v2/jpg/01/16/24/44/1000_F_116244459_pywR1e0T3H7FPk3LTMjG6jsL3UchDpht.jpg"
+            alt=""
+            class="w-10 h-10 rounded-full"
+          />
+          <div class="hidden xl:flex flex-col">
+            <h4 class="text-gray-400 font-bold text-sm">Maryam Adeena</h4>
+            <p class="text-gray-400 text-sm">@maryamadeena</p>
+          </div>
+          <i
+            class="fa-solid fa-chevron-down text-xs hidden xl:flex items-enter xl:ml-4 text-gray-400"
+          ></i>
+        </div>
+      </div>
+      <!-- End Left -->
+
+      <!-- Middle -->
+      <div class="w-full xl:w-1/2 h-screen overflow-y-auto ml-3">
+        <!-- Sticky Header -->
+        <div
+          class="flex justify-between items-center border px-4 py-3 sticky top-0 bg-gray-900 border-gray-800"
+        >
+          <h4 class="text-gray-300 font-bold">Home</h4>
+        </div>
+
+        <!-- Tweet Box -->
+        <div class="border border-gray-800">
+          <div class="flex p-4">
+            <img
+              src="https://as1.ftcdn.net/v2/jpg/01/16/24/44/1000_F_116244459_pywR1e0T3H7FPk3LTMjG6jsL3UchDpht.jpg"
+              alt=""
+              class="w-10 h-10 rounded-full"
+            />
+            <textarea
+              class="p-2 text-gray-300 w-full h-16 bg-transparent focus:outline-none resize-none"
+              name=""
+              id=""
+              placeholder="What's happening?"
+            ></textarea>
+          </div>
+
+          <!-- Tweet box icon -->
+          <div class="flex p-4 w-full">
+            <a href="" class="text-blue-400 rounded-full p-2">
+              <i class="fa-solid fa-image text-lg"></i>
+            </a>
+            <a href="" class="text-blue-400 rounded-full p-2">
+              <i class="fa-brands fa-git text-lg"></i>
+            </a>
+            <a href="" class="text-blue-400 rounded-full p-2">
+              <i class="fa-sold fa-square-poll-horizontal text-lg"></i>
+            </a>
+            <a href="" class="text-blue-400 rounded-full p-2">
+              <i class="fa-solid fa-face-smile text-lg"></i>
+            </a>
+            <a href="" class="text-blue-400 rounded-full p-2">
+              <i class="fa-solid fa-business-time text-lg"></i>
+            </a>
+            <a
+              href=""
+              class="px-4 ml-auto mr-1 flex items-center bg-blue-400 rounded-full text-white hover:bg-blue-800 font-bold"
+              >Tweet</a
+            >
+          </div>
+        </div>
+        <!-- End Tweet Box -->
+
+        <div class="border border-gray-800 p-4">
+          <p class="text-center text-blue-500">Show 10 tweets</p>
+        </div>
+
+        <!-- Tweet 1-->
+        <div class="border border-gray-800">
+          <div class="flex p-4">
+            <img
+              src="https://www.thegardensmall.com.my/wp-content/uploads/2016/06/llao-llao-logo.png"
+              alt=""
+              class="w-10 h-10 rounded-full"
+            />
+            <div
+              class="hidden xl:flex flex-col focus:outline-none resize-none ml-5"
+            >
+              <h4>
+                <span class="text-gray-100 font-bold text-sm">Llao llao</span>
+                <span class="text-gray-400 text-sm"
+                  >@llaollaoofficial . 2m
+                </span>
+              </h4>
+              <p class="text-white text-sm">
+                Hello everyone! Don't forget to go to your nearest llao llao
+                outlet to get one free petitllao on your birthday and celebrate
+                your birthday with us!
+              </p>
+              <img
+                class="mt-3 mr-2 rounded-2xl border border-gray-700 w-full cursor-pointer"
+                src="https://woodpeckers.asia/wp-content/uploads/Screenshot-2021-04-07-at-4.52.02-PM-1024x1024.png"
+                alt=""
+              />
+              <div class="flex items-center w-full justify-between mt-3">
+                <div class="interact">
+                  <a href="">
+                    <i
+                      class="fa-solid fa-comment text-lg hover:text-blue-400"
+                    ></i>
+                  </a>
+                </div>
+                <div class="interact">
+                  <a href="">
+                    <i
+                      class="fa-solid fa-retweet text-lg hover:text-green-500"
+                    ></i>
+                    <span>78</span>
+                  </a>
+                </div>
+                <div class="interact">
+                  <a href="">
+                    <i class="fa-solid fa-heart text-lg hover:text-red-700"></i>
+                    <span>243</span>
+                  </a>
+                </div>
+                <div class="interact">
+                  <a href="">
+                    <i class="fa-solid fa-share text-lg"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Tweet 1 -->
+
+        <!-- Tweet 2-->
+        <div class="border border-gray-800">
+          <div class="flex p-4">
+            <img
+              src="https://as1.ftcdn.net/v2/jpg/01/16/24/44/1000_F_116244459_pywR1e0T3H7FPk3LTMjG6jsL3UchDpht.jpg"
+              alt=""
+              class="w-10 h-10 rounded-full"
+            />
+
+            <div
+              class="hidden xl:flex flex-col focus:outline-none resize-none ml-5"
+            >
+              <h4>
+                <span class="text-gray-100 font-bold text-sm">Deena</span>
+                <span class="text-gray-400 text-sm">@maryamadeena . 4h </span>
+              </h4>
+              <p class="text-white text-sm">Uhmmm,, nothing happen today</p>
+
+              <
+              <div class="flex justify-between w-full space-x-32">
+                <a href="" class="interact-tweet">
+                  <i
+                    class="fa-solid fa-comment text-lg hover:text-blue-400"
+                  ></i>
+                  <span></span>
+                </a>
+                <a href="" class="interact-tweet">
+                  <i
+                    class="fa-solid fa-retweet text-lg hover:text-green-500"
+                  ></i>
+                </a>
+                <a href="" class="interact-tweet">
+                  <i class="fa-solid fa-heart text-lg hover:text-red-700"></i>
+                </a>
+                <a href="" class="interact-tweet">
+                  <i class="fa-solid fa-share text-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Tweet 2 -->
+
+        <!-- Tweet 4-->
+        <div class="border border-gray-800">
+          <div class="flex p-4">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/147/147142.png"
+              alt=""
+              class="w-10 h-10 rounded-full"
+            />
+
+            <div
+              class="hidden xl:flex flex-col focus:outline-none resize-none ml-5"
+            >
+              <h4>
+                <span class="text-gray-100 font-bold text-sm">Riyad</span>
+                <span class="text-gray-400 text-sm">@riyad7ayyan . 4h </span>
+              </h4>
+              <p class="text-white text-sm">Hai, cemua cehad ketew?</p>
+
+              <
+              <div class="flex justify-between w-full space-x-32">
+                <a href="" class="interact-tweet">
+                  <i
+                    class="fa-solid fa-comment text-lg hover:text-blue-400"
+                  ></i>
+                  <span>1</span>
+                </a>
+                <a href="" class="interact-tweet">
+                  <i
+                    class="fa-solid fa-retweet text-lg hover:text-green-500"
+                  ></i>
+                </a>
+                <a href="" class="interact-tweet">
+                  <i class="fa-solid fa-heart text-lg hover:text-red-700"></i>
+                </a>
+                <a href="" class="interact-tweet">
+                  <i class="fa-solid fa-share text-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex p-4">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/147/147142.png"
+              alt=""
+              class="w-10 h-10 rounded-full"
+            />
+            <div
+              class="hidden xl:flex flex-col focus:outline-none resize-none ml-5"
+            >
+              <p class="text-center text-blue-500">Show thread</p>
+            </div>
+          </div>
+        </div>
+        <!-- End Tweet 4 -->
+
+        <!-- Spinner -->
+        <div class="p4 border border-gray-800">
+          <svg class="w-8 h-8 mx-auto animate-spin">
+            <circle
+              cx="16"
+              cy="16"
+              fill="none"
+              r="14"
+              stroke-width="4"
+              style="stroke: rgb(29, 161, 242); opacity: 0.2"
+            ></circle>
+
+            <circle
+              cx="16"
+              cy="16"
+              fill="none"
+              r="14"
+              stroke-width="4"
+              style="
+                stroke: rgb(29, 161, 242);
+                stroke-dasharray: 80;
+                stroke-dashoffset: 60;
+              "
+            ></circle>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Right  -->
+      <div class="hidden w-[30%] xl:block">
+        <!-- Search -->
+        <div
+          class="bg-gray-800 h-11 w-full flex items-center rounded-full text-white p-3 m-3 cursor-pointer"
+        >
+          <i class="fa-solid fa-magnifying-glass ml-4"></i>
+          <input
+            type="text"
+            placeholder="Search Twitter"
+            class="bg-transparent text-center"
+          />
+        </div>
+
+        <!-- Trending -->
+        <div class="bg-gray-800 h-auto w-full flex rounded-2xl m-3 p-4">
+          <div
+            class="hidden xl:flex flex-col focus:outline-none resize-none ml-5"
+          >
+            <h4 class="font-bold text-white">Trends For You</h4>
+            <p class="pt-6 text-gray-500">Trending in Malaysia</p>
+            <h3 class="font-bold text-white">#SekaliLagiCintaKembali</h3>
+            <p class="text-gray-500">8,843 Tweets</p>
+
+            <p class="pt-6 text-gray-500">Trending in Malaysia</p>
+            <h3 class="font-bold text-white">#ShiningMan</h3>
+            <p class="text-gray-500">10k Tweets</p>
+
+            <p class="pt-6 text-gray-500">Kpop . Trending</p>
+            <h3 class="font-bold text-white">Big Bang</h3>
+            <p class="text-gray-500">29k Tweets</p>
+
+            <p class="pt-6 text-gray-500">Entertainment . Trending</p>
+            <h3 class="font-bold text-white">#NOF22</h3>
+            <p class="text-gray-500">9,843 Tweets</p>
+
+            <p class="text-blue-500 pt-6">Show More</p>
+          </div>
+        </div>
+        <!-- End Trending -->
+
+        <!-- Suggestions -->
+        <div class="bg-gray-800 h-auto w-full flex rounded-2xl m-3 p-4">
+          <div
+            class="hidden xl:flex flex-col focus:outline-none resize-none ml-5"
+          >
+            <h4 class="font-bold text-white">Who to follow</h4>
+
+            <!-- Suggest 1 -->
+            <div
+              class="pt-4 space-x-4 flex justify-between rounded-full cursor-pointer"
+            >
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/avatar-370-456322.png"
+                alt=""
+                class="w-10 h-10 rounded-full"
+              />
+              <div class="hidden xl:flex flex-col">
+                <h4 class="text-gray-400 font-bold text-sm">Krohh</h4>
+                <p class="text-gray-400 text-sm">@mewennnew</p>
+              </div>
+
+              <a
+                href=""
+                class="px-4 flex items-center bg-black rounded-full text-white hover:bg-blue-500 font-bold"
+                >Follow</a
+              >
+            </div>
+            <!-- End Suggest 1 -->
+
+            <!-- Suggest 2 -->
+            <div
+              class="pt-4 space-x-4 flex justify-between rounded-full cursor-pointer"
+            >
+              <img
+                src="https://i.pinimg.com/474x/20/7a/26/207a265416211b32add702eade4de3a7.jpg"
+                alt=""
+                class="w-10 h-10 rounded-full"
+              />
+              <div class="hidden xl:flex flex-col">
+                <h4 class="text-gray-400 font-bold text-sm">ST</h4>
+                <p class="text-gray-400 text-sm">@sifutongga</p>
+              </div>
+
+              <a
+                href=""
+                class="px-4 flex items-center bg-black rounded-full text-white hover:bg-blue-500 font-bold"
+                >Follow</a
+              >
+            </div>
+            <!-- End Suggest 2 -->
+
+            <p class="text-blue-500 pt-6">Show More</p>
+          </div>
+        </div>
+        <!-- End Suggestion -->
+      </div>
+    </div>
+  </body>
+</html>
